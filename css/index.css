@@ -53,6 +53,19 @@ header nav ul li a {
 	}
 }
 
+header .envios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #808080;
+
+	h2 {
+		font-size: 19px;
+		color: #fff;
+		margin: 8px;
+	}
+}
+
 .listaProducto {
 	position: absolute;
 	right: 0px;
@@ -66,23 +79,50 @@ header nav ul li a {
 
 /* ====== Menu / Cuerpo ====== */
 
-main {	
-	max-width: 1160px;
-	margin: 0 auto;
+.aside-carrousel {
+	display: flex;
+	gap: 10px;
 }
 
-header .envios {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #808080;
+aside {
+	background-color: #385dc7;
+	width: 30%;
 
-	h2 {
-		font-size: 19px;
-		color: #fff;
-		margin: 8px;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li{
+			padding: 10px 40px;
+			
+
+
+				a{
+					text-decoration: none;
+					font-size: 1em;
+					color: #fff;
+					font-weight: 700;
+				}
+		}
 	}
 }
+
+aside ul li h3 {
+	color: #fff;
+	font-size: 20px;
+	margin: 0;
+}
+
+aside ul .categorias {
+	border-bottom: #808080 solid 1px;
+}
+
+.banner {
+	height: 265px;
+	width: 100%;
+}
+
 
 main section {
 	display: flex;
@@ -155,12 +195,12 @@ main section .games article .comprar:hover {
 	transition: color 350ms, background-color 350ms;
 }
 
-main h3 {
+ /* main h3 {
 	font-size: 35px;
 	text-align: center;
 	margin-top: 70px;
 	margin-bottom: 70px;
-}
+} /*
 
 
 /* ====== Layout ====== */
@@ -209,9 +249,7 @@ main h3 {
 
 /* ====== Banner de juegos ====== */
 
-.banner {
-	height: 500px;
-}
+
 
 /* ====== Pie de pagina ====== */
 
