@@ -1,0 +1,426 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* ====== Barra de navegacion / Cabecera ====== */
+
+header {
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #385dc7;
+	box-shadow: 0 4px 25px -22px black;
+	z-index: 800;
+}
+
+header .header-content {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+header .header-content .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .header-content .logo img {
+	height: 90px;
+}
+
+.menu {
+	height: 90px;
+}
+
+aaaaaa {
+	background-color: #385dc7;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu nav {
+	height: 100%;
+}
+
+.menu nav ul {
+	height: 100%;
+	display: flex;
+	gap: 20px;
+}
+
+.menu nav ul li {
+	font-size: 20px;
+	height: 100%;
+	margin: 0px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+.menu-selected:before{
+	content: " ";
+	width: 100%;
+	height: 4px;
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: white;
+	transition: color 350ms, background 350ms;
+}
+
+.menu ul li a:hover {
+	color: red;
+	background: #a8bdf6;
+	border-radius: 10px;
+}
+
+.text-menu-selected{
+	color: white
+}
+
+header nav .navbar-box .nav-buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+aaaaa {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+
+header nav .navbar-box .nav-buttons ul li {
+	text-decoration: none;
+	background-color: #385dc7;
+	color: white;
+	font-size: 23px;
+	border-radius: 10px;
+	padding: 10px;
+	transition: all 300ms;
+}
+
+header nav .navbar-box .nav-buttons ul li:hover {
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+	transition: background-color 500ms, color 500ms, transform 400ms;
+}
+
+.listaProducto {
+	position: absolute;
+	right: 0px;
+	width: 400px;
+	z-index: 90;
+}
+
+.noVisible {
+	display: none;
+}
+
+/* ====== Menu / Cuerpo ====== */
+
+main {	
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+main section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 75px;
+	text-align: center;
+}
+
+main section .games {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 23px;
+}
+
+main section .games article {
+	text-align: center;
+	border-bottom: 5px solid #385dc7;
+}
+
+/* ====== Diseño de las cards ====== */
+
+main section .games article .card-color {
+	background-color: #efefef;
+}
+
+/* Imagen de las cars */
+
+main section .games article .card-imgs { 
+	
+	height: 210px;
+	margin: 32px 32px 5px 32px;
+}
+
+.card-color {
+	background-color: #efefef;
+	
+}
+
+/* Titulo de las cards */
+
+main section .games article .titulo {	
+	font-size: 32px;
+	margin-top: 7px;
+}
+
+main section .games article .precio {
+	font-size: 30px;
+} 
+
+/* Boton comprar de las cards */
+
+main section .games article .comprar {
+	background-color: #a8bdf6;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 4px;
+	padding: 10px;
+	margin-bottom: 25px;
+	transition: all 350ms;
+}
+
+main section .games article .comprar:hover {
+	background-color: #385dc7;
+	color: white;
+	transition: color 350ms, background-color 350ms;
+}
+
+main h3 {
+	font-size: 35px;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+
+/* ====== Layout ====== */
+
+.grid-contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 150px 150px 150px 150px 150px 150px;
+	gap: 15px;
+}
+
+.grid-contenedor div {
+	transition: transform 390ms, box-shadow 390ms, border 390ms;
+}
+
+.grid-contenedor div:hover {
+	box-shadow: 0px 4px 8px 0 black;
+	transform: scale(1.1);
+	transition: transform 400ms, box-shadow 400ms, border 400ms;	
+}
+
+.medidas-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.child-uno {	
+	grid-row: 1/3;
+}
+
+.child-dos {
+	grid-column: 2/4;
+	grid-row: 1/3;
+}
+
+.child-tres {
+	grid-column: 1/3;
+	grid-row: 3/5;
+}
+
+.child-seis {
+	grid-column: 1/4;
+	grid-row: 5/7;
+}
+
+/* ====== Banner de juegos ====== */
+
+.banner {
+	height: 500px;
+}
+
+/* ====== Pie de pagina ====== */
+
+footer {
+	background-color: black;
+	width: 100%;
+	margin-top: 90px;
+}
+
+footer .footer-1 {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .footer-1 .footer-box figure img {
+	width: 100px;
+}
+
+footer .footer-1 .footer-box h2 {
+	color: white;
+	margin-bottom: 20px;
+}
+
+footer .footer-1 .footer-box p {
+	color: #efefef;
+	margin-bottom: 5px;
+}
+
+footer .footer-1 .footer-box .red i {
+	color: white;
+	font-size: 50px;
+	transition: transform 400ms, color 400ms;
+}
+
+footer .footer-1 .footer-box .red a i:hover {
+	color: #808080;
+	transform: scale(1.1);
+	transition: transform 700ms, color 500ms;
+}
+
+footer .footer-2 {
+	background-color: #101010;
+	color: #707070;
+}
+
+footer .footer-2 p {
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+
+/* --Tablet-- */
+
+@media (max-width: 768px) {
+
+	header nav .navbar-box .nav-logo {
+		width: 65px;
+	}
+
+	header nav .navbar-box .nav-buttons a {
+		margin-right: 30px;
+		font-size: 20px;
+	}
+
+	.card-imgs {
+		height: 210px;
+	}
+
+	.titulo {
+		font-size: 25px;
+	}
+
+	main h3 {
+		font-size: 30px;
+	}
+
+	.grid-contenedor {
+		padding: 8px;
+		gap: 10px;
+	}
+
+	.banner {
+		height: 400px;
+	}
+
+	footer .footer-1 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .footer-1 .footer-box {
+		margin-bottom: 30px;
+	}
+}
+/* ====== Celulares ====== */
+
+@media 	(max-width: 576px) {
+
+	header nav .navbar-box .nav-logo {
+		width: 65px;
+	}
+
+	header nav .navbar-box .nav-buttons a {
+		padding: 8px;
+		margin-right: 5px;
+		font-size: 15px;
+	}
+
+	section h2 {
+		margin-top: 150px;
+	}
+
+	.card-imgs {
+		height: 160px;
+	}
+
+	.titulo {
+		font-size: 22px;
+	}
+
+	.comprar {
+		font-size: 18px;
+		padding: 8px;
+		margin: 15px;
+}
+
+	main h3 {
+		font-size: 30px;
+	}
+
+	.grid-contenedor {
+		grid-template-rows: 65px 65px 65px 65px 65px 65px;
+		gap: 8px;
+	}
+
+	.banner {
+		height: 240px;
+	}
+
+	footer .footer-1 {
+		padding: 60px 60px 30px 60px;
+	}
+}
