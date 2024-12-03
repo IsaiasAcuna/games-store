@@ -143,8 +143,21 @@ header nav .navbar-box .nav-buttons ul li:hover {
 /* ====== Menu / Cuerpo ====== */
 
 main {	
-	max-width: 960px;
+	max-width: 1160px;
 	margin: 0 auto;
+}
+
+header .envios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #808080;
+
+	h2 {
+		font-size: 19px;
+		color: #fff;
+		margin: 8px;
+	}
 }
 
 main section {
