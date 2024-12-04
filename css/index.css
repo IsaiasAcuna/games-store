@@ -87,25 +87,16 @@ header .envios {
 aside {
 	background-color: #385dc7;
 	width: 30%;
+}
 
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
+aside ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 
-		li{
-			padding: 10px 40px;
-			
-
-
-				a{
-					text-decoration: none;
-					font-size: 1em;
-					color: #fff;
-					font-weight: 700;
-				}
-		}
-	}
+aside ul .categorias {
+	border-bottom: #808080 solid 1px;
 }
 
 aside ul li h3 {
@@ -114,8 +105,19 @@ aside ul li h3 {
 	margin: 0;
 }
 
-aside ul .categorias {
-	border-bottom: #808080 solid 1px;
+aside ul li {
+	padding: 10px 40px;
+}
+
+aside ul li a {
+	text-decoration: none;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 700;
+}
+
+aside ul li a:hover{
+	color: #c5c5c5;
 }
 
 .banner {
@@ -136,6 +138,8 @@ h1 {
 }
 
 main section .games {
+	max-width: 1160px;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -169,12 +173,12 @@ main section .games article .card-imgs {
 /* Titulo de las cards */
 
 main section .games article .titulo {	
-	font-size: 32px;
+	font-size: 25px;
 	margin-top: 7px;
 }
 
 main section .games article .precio {
-	font-size: 30px;
+	font-size: 20px;
 } 
 
 /* Boton comprar de las cards */
