@@ -127,15 +127,18 @@ aside ul li a:hover{
 
 
 main section {
+	max-width: 1160px;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
 
-h1 {
-	font-size: 75px;
+main section h2 {
 	text-align: center;
+	margin: 2.3em;
 }
+
 
 main section .games {
 	max-width: 1160px;
@@ -151,6 +154,11 @@ main section .games article {
 	border-bottom: 5px solid #385dc7;
 }
 
+main #PlayStation5 .games article {
+	text-align: center;
+	border-bottom: 5px solid #000000;
+}
+
 /* ====== Diseño de las cards ====== */
 
 main section .games article .card-color {
@@ -160,25 +168,31 @@ main section .games article .card-color {
 /* Imagen de las cars */
 
 main section .games article .card-imgs { 
-	
 	height: 210px;
 	margin: 32px 32px 5px 32px;
 }
 
 .card-color {
 	background-color: #efefef;
-	
+	margin-top: 1px;;
 }
+
 
 /* Titulo de las cards */
 
 main section .games article .titulo {	
-	font-size: 25px;
-	margin-top: 7px;
+	font-size: 23px;
+	margin: 0;
+	padding: 0 15px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	width: 230px;
 }
 
 main section .games article .precio {
 	font-size: 20px;
+	margin: 7px;
 } 
 
 /* Boton comprar de las cards */
@@ -188,7 +202,7 @@ main section .games article .comprar {
 	font-size: 20px;
 	border-radius: 10px;
 	border: 4px;
-	padding: 10px;
+	padding: 7px;
 	margin-bottom: 25px;
 	transition: all 350ms;
 }
@@ -199,13 +213,21 @@ main section .games article .comprar:hover {
 	transition: color 350ms, background-color 350ms;
 }
 
- /* main h3 {
-	font-size: 35px;
-	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 70px;
-} /*
+main #PlayStation5 .games article .comprar {
+	background-color: #ffffff;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 4px;
+	padding: 7px;
+	margin-bottom: 25px;
+	transition: all 350ms;
+}
 
+main #PlayStation5 .games article .comprar:hover {
+	background-color: #385dc7;
+	color: white;
+	transition: color 350ms, background-color 350ms;
+}
 
 /* ====== Layout ====== */
 

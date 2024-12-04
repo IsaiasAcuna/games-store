@@ -32,6 +32,10 @@
 
 	<header>
 
+		<div class="envios">
+			<h2>Envíos a toda la Argentina!</h2>
+		</div>
+
 		<nav>
 
 			<h1>Games Store</h1>
@@ -45,10 +49,6 @@
 			</ul>
 
 		</nav>
-
-		<div class="envios">
-			<h2>Envíos a toda la Argentina!</h2>
-		</div>
 
 	</header>
 
@@ -74,7 +74,7 @@
 				<ul>
 					<li class="categorias"><h3>CATEGORIAS</h3></li>
 					<li><a href="#PlayStation4">PLAYSTATION 4</a></li>
-					<li><a href="#">PLAYSTATION 5</a></li>
+					<li><a href="#PlayStation5">PLAYSTATION 5</a></li>
 					<li><a href="#">PERIFERICOS</a></li>
 					<li><a href="#">CONSOLAS</a></li>
 					<li><a href="#">PROXIMAMENTE</a></li>
@@ -97,18 +97,8 @@
 
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
 		<section id="PlayStation4">
+			<h2>PlayStation 4</h2>
 			<div class="games" data-aos="fade-up">
 				<article>
 					<div>
@@ -150,32 +140,59 @@
 					<button onclick="cargarProducto(3)" class="comprar">Comprar</button>
 				</div>
 			</article>
-			<article>
-				<div>
-					<img src="img/spiderman.jpg" alt="Spider-Man" class="card-imgs">
-				</div>
-				<div class="card-color">
-					<p class="titulo">Spider-Man</p>
-					<p class="precio">$10.000</p>
-					<button onclick="cargarProducto(4)" class="comprar">Comprar</button>
-				</div>
-			</article>
-			<article>
-				<div>
-					<img src="img/godofwar.jpg" alt="God of War" class="card-imgs">
-				</div>
-				<div class="card-color">
-					<p class="titulo">God of War</p>
-					<p class="precio">$12.000</p>
-					<button onclick="cargarProducto(5)" class="comprar">Comprar</button>
-				</div>
-			</article>
+			
 		</div>
 		</section>
 
-		<h3>Proximamente en PlayStation 5</h3>
+		<section id="PlayStation5">
+			<h2>PlayStation 5</h2>
+			<div class="games">
+				<article>
+					<div>
+						<img src="img/the-last-of-us-part-I.png" fetchpriority="low" alt="Uncharted 4" class="card-imgs">
+					</div>
+					<div class="card-color">
+						<p class="titulo">The Last of Us I</p>
+						<p class="precio">$5.000</p>
+						<button onclick="cargarProducto(0)" class="comprar">Comprar</button>
+					</div>
+				</article>										
+			<article>
+				<div>
+					<img src="img/spiderman-miles-morales.jpg" alt="The Last of Us Remastered" class="card-imgs">
+				</div>
+				<div class="card-color">
+					<p class="titulo">Spiderman: Miles Morales</p>
+					<p class="precio">$7.000</p>
+					<button onclick="cargarProducto(1)" class="comprar">Comprar</button>
+				</div>
+			</article>
+			<article>
+				<div>
+					<img src="img/horizon-2-forbidden-west.jpg" alt="horizon-2-forbidden-west" class="card-imgs">
+				</div>
+				<div class="card-color">
+					<p class="titulo">Horizon: Forbidden West</p>
+					<p class="precio">$13.000</p>
+					<button onclick="cargarProducto(2)" class="comprar">Comprar</button>
+				</div>
+			</article>
+			<article>
+				<div>
+					<img src="img/gran-turismo-7.png" alt="gran-turismo-7" class="card-imgs">
+				</div>
+				<div class="card-color">
+					<p class="titulo">The Last of Us II</p>
+					<p class="precio">$18.000</p>
+					<button onclick="cargarProducto(3)" class="comprar">Comprar</button>
+				</div>
+			</article>
+			
+		</div>
+		</section>
 
 		<section id="sectionComingSoon">
+			<h3>Proximamente</h3>
 			<div class="grid-contenedor" data-aos="fade-up">
 
 				<div class="child-uno">
@@ -263,23 +280,6 @@
 
 		<h3>Nominados a The Games Awards</h3>
 
-		
-
-		<section class="nasjheihewf">
-			<h2>Secciones</h2>
-			<ul>
-				<li>
-					<a href="#sectionGameStore">Tienda - Games Store</a>
-				</li>
-
-				<li>
-					<a href="#sectionComingSoon">Proximamente - Coming soon</a>
-				</li>
-
-				<li></li>
-				<li></li>
-			</ul>
-		</section>
 	</main>
 
 	<footer>
