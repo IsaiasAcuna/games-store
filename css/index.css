@@ -10,39 +10,40 @@
 header {
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 100%;
 	width: 100%;
 	background-color: #385dc7;
 	box-shadow: 0 4px 25px -22px black;
 	z-index: 800;
 }
 
-header nav {
-	margin: auto;
+header .tittle-carrito {
+	margin: 10px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	
 }
 
-header nav h1 {
+header .tittle-carrito h1 {
 	font-size: 40px;
 	color: #fff;
-	margin: 8px;
+	margin: 0;
 }
 
-header nav ul {
+header .tittle-carrito ul {
 	margin: 0;
 	padding: 0;
 }
 
-header nav ul li {
+header .tittle-carrito ul li {
 	font-size: 20px;
 	height: 100%;
 	margin: 8px;
 }
 
 
-header nav ul li a {
+header .tittle-carrito ul li a {
 	text-decoration: none;
 	color: white;
 	transition: all 0.2s;
@@ -57,13 +58,49 @@ header .envios {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #808080;
+	background-color: #2b4aa0;
 
 	h2 {
 		font-size: 19px;
 		color: #fff;
 		margin: 8px;
 	}
+}
+
+header nav {
+	background-color: #262626;
+	width: 100%;
+}
+
+header nav ul {
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+	margin: 0 auto;
+	padding: 5px;
+	max-width: 900px;
+}
+
+header nav ul li {
+	margin: 10px;
+} 
+
+header nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #464646;
+	padding: 8px 15px;
+	border-radius: 3px;
+	transition: all 250ms;
+
+}
+
+header nav ul li a:hover {
+	background-color: #fff;
+	color: #000000;
+	transition: all 250ms;
 }
 
 .listaProducto {
@@ -79,52 +116,6 @@ header .envios {
 
 /* ====== Menu / Cuerpo ====== */
 
-.aside-carrousel {
-	display: flex;
-	gap: 10px;
-}
-
-aside {
-	background-color: #385dc7;
-	width: 30%;
-}
-
-aside ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-aside ul .categorias {
-	border-bottom: #808080 solid 1px;
-}
-
-aside ul li h3 {
-	color: #fff;
-	font-size: 20px;
-	margin: 0;
-}
-
-aside ul li {
-	padding: 10px 40px;
-}
-
-aside ul li a {
-	text-decoration: none;
-	font-size: 1em;
-	color: #fff;
-	font-weight: 700;
-}
-
-aside ul li a:hover{
-	color: #c5c5c5;
-}
-
-.banner {
-	height: 265px;
-	width: 100%;
-}
-
 
 main section {
 	max-width: 1160px;
@@ -135,23 +126,28 @@ main section {
 }
 
 main section h2 {
-	text-align: center;
-	margin: 2.3em;
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-weight: 800;
+	color: #fff;
+	background-color: #262626;
+	padding: 20px;
+	border-radius: 0 50px 0 0;
 }
 
 
 main section .games {
 	max-width: 1160px;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	gap: 23px;
 }
 
 main section .games article {
-	text-align: center;
 	border-bottom: 5px solid #385dc7;
+	background-color: #eee8e8;
 }
 
 main #PlayStation5 .games article {
@@ -162,32 +158,30 @@ main #PlayStation5 .games article {
 /* ====== Diseño de las cards ====== */
 
 main section .games article .card-color {
-	background-color: #efefef;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Imagen de las cars */
 
 main section .games article .card-imgs { 
 	height: 210px;
-	margin: 32px 32px 5px 32px;
-}
-
-.card-color {
-	background-color: #efefef;
-	margin-top: 1px;;
+	width: 165px;
+	margin: 10px 32px;
 }
 
 
 /* Titulo de las cards */
 
 main section .games article .titulo {	
-	font-size: 23px;
-	margin: 0;
-	padding: 0 15px;
+	font-size: 20px;
+	text-align: center;
 	white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-	width: 230px;
+	width: 150px;
 }
 
 main section .games article .precio {
@@ -199,11 +193,11 @@ main section .games article .precio {
 
 main section .games article .comprar {
 	background-color: #a8bdf6;
-	font-size: 20px;
-	border-radius: 10px;
+	font-size: 15px;
+	border-radius: 5px;
 	border: 4px;
-	padding: 7px;
-	margin-bottom: 25px;
+	padding: 7px 70px;
+	margin-bottom: 15px;
 	transition: all 350ms;
 }
 
@@ -275,7 +269,14 @@ main #PlayStation5 .games article .comprar:hover {
 
 /* ====== Banner de juegos ====== */
 
+.banner-publicidad {
+	max-width: 100%;
+}
 
+.banner-imgs {
+	height: 72vh;
+	object-fit: cover;
+}
 
 /* ====== Pie de pagina ====== */
 
