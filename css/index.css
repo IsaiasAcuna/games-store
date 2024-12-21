@@ -22,7 +22,6 @@ header .tittle-carrito {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	
 }
 
 header .tittle-carrito .name-logo {
@@ -115,9 +114,13 @@ header nav ul li a:hover {
 
 .listaProducto {
 	position: absolute;
-	right: 0px;
+	right: 12px;
 	width: 400px;
 	z-index: 90;
+}
+
+.padding-listaProducto {
+	padding: 0;
 }
 
 .noVisible {
@@ -179,7 +182,6 @@ main section .secciones .linea-black {
 /* ====== SECCIONES JUEGOS ====== */
 
 main section .games {
-	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -189,7 +191,6 @@ main section .games {
 /* ====== DISEÑO DE LAS CARDS ====== */
 
 main section .games article {
-
 	height: auto;
 	width: 230px;
 
@@ -215,9 +216,12 @@ main section .games article:hover {
 	transition: all 150ms;
 }
 
-main #PlayStation5 .games article {
-	text-align: center;
-	border-bottom: 5px solid #000000;
+main #xbox .games article {
+	border-bottom: 5px solid #22bb2e;
+}
+
+main #nintendo .games article {
+	border-bottom: 5px solid #cf1616;
 }
 
 /* ====== card img ====== */
@@ -226,6 +230,7 @@ main section .games article img {
 	height: 210px;
 	width: 165px;
 	padding: 24px;
+	object-fit: contain;
 }
 
 /* ====== card titulo ====== */
